@@ -16,6 +16,7 @@ jobs:
           avd-name: myavd
           no-window: true
           restore-gradle-cache-prefix: v1a
+      - android/disable-animations
       - android/run-tests
       - android/save-gradle-cache:
           cache-prefix: v1a
