@@ -19,7 +19,7 @@ jobs:
       - android/save-gradle-cache:
           cache-prefix: v1a
       - store_test_results:
-          path: app/build/test-results/testDebugUnitTest
+          path: app/build/outputs/androidTest-results
 workflows:
   test:
     jobs:
