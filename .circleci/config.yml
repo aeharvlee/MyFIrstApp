@@ -15,12 +15,11 @@ jobs:
       - android/start-emulator:
           avd-name: myavd
           restore-gradle-cache-prefix: v1a
-      - android/disable-animations
       - android/run-tests
       - android/save-gradle-cache:
           cache-prefix: v1a
       - store_test_results:
-          path: build/test-results
+          path: app/build/test-results
 workflows:
   test:
     jobs:
