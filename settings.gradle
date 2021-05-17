@@ -1,2 +1,14 @@
 rootProject.name = "My FIrst App"
 include ':app'
+
+plugins {
+    id "com.gradle.enterprise" version "3.6.1"
+}
+
+gradleEnterprise {
+    buildScan {
+        // Connecting to scans.gradle.com by agreeing to the terms of service
+        termsOfServiceUrl = "https://gradle.com/terms-of-service"
+        termsOfServiceAgree = "yes"
+    }
+}
